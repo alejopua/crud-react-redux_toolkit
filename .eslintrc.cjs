@@ -19,6 +19,7 @@ module.exports = {
 			files: ['*.ts', '*.tsx'],
 			rules: {
 				'@typescript-eslint/semi': 'off',
+				'@typescript-eslint/no-unused-vars': 'error',
 			},
 		},
 	],
