@@ -3,7 +3,7 @@ module.exports = {
 		browser: true,
 		es2021: true,
 	},
-	extends: ['xo', 'plugin:react/recommended'],
+	extends: ['xo', 'plugin:prettier/recommended'],
 	overrides: [
 		{
 			env: {
@@ -17,6 +17,9 @@ module.exports = {
 		{
 			extends: ['xo-typescript'],
 			files: ['*.ts', '*.tsx'],
+			rules: {
+				'@typescript-eslint/semi': 'off',
+			},
 		},
 	],
 	parserOptions: {
@@ -24,9 +27,5 @@ module.exports = {
 		sourceType: 'module',
 	},
 	plugins: ['react'],
-	rules: {
-		semi: 'off',
-		'@typescript-eslint/semi': 'off',
-		'react/react-in-jsx-scope': 'off',
-	},
-};
+	rules: {},
+}
