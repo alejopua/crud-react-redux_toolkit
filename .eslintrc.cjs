@@ -8,6 +8,7 @@ module.exports = {
 		'plugin:prettier/recommended',
 		'plugin:tailwindcss/recommended',
 	],
+	ignorePatterns: ['**/*.css'],
 	overrides: [
 		{
 			env: {
