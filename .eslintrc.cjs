@@ -3,7 +3,11 @@ module.exports = {
 		browser: true,
 		es2021: true,
 	},
-	extends: ['xo', 'plugin:prettier/recommended'],
+	extends: [
+		'xo',
+		'plugin:prettier/recommended',
+		'plugin:tailwindcss/recommended',
+	],
 	overrides: [
 		{
 			env: {
