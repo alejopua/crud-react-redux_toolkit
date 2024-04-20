@@ -5,7 +5,7 @@ const people = [
 		name: 'Jane Cooper',
 		role: 'Admin',
 		email: 'jane.cooper@example.com',
-		github: 'janecoop',
+		github: 'johndoe',
 	},
 	{
 		name: 'John Doe',
@@ -23,7 +23,7 @@ const people = [
 		name: 'Peter  Parker',
 		role: 'Software Movile',
 		email: 'peter@example.com',
-		github: 'peterparker',
+		github: 'alejopua',
 	},
 ]
 
@@ -54,8 +54,8 @@ export default function ListOfUsers() {
 												<div className='size-10 shrink-0'>
 													<img
 														className='size-10 rounded-full'
-														src={`https://unavatar.io/github/${person.github}`}
-														alt=''
+														src='https://avatar.iran.liara.run/public'
+														alt={person.name}
 													/>
 												</div>
 												<div className='ml-4'>
