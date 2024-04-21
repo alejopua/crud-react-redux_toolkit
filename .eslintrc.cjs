@@ -5,7 +5,9 @@ module.exports = {
 	},
 	extends: [
 		'xo',
-		'plugin:prettier/recommended',
+		'eslint:recommended',
+		'plugin:@typescript-eslint/recommended',
+		'prettier',
 		'plugin:tailwindcss/recommended',
 	],
 	ignorePatterns: ['**/*.css'],
@@ -32,6 +34,6 @@ module.exports = {
 		ecmaVersion: 'latest',
 		sourceType: 'module',
 	},
-	plugins: ['react', 'tailwindcss'],
+	plugins: ['@typescript-eslint', 'react', 'tailwindcss', 'prettier'],
 	rules: {},
 }
