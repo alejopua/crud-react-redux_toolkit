@@ -3,13 +3,7 @@ module.exports = {
 		browser: true,
 		es2021: true,
 	},
-	extends: [
-		'xo',
-		'eslint:recommended',
-		'plugin:@typescript-eslint/recommended',
-		'prettier',
-		'plugin:tailwindcss/recommended',
-	],
+	extends: ['xo', 'prettier', 'plugin:tailwindcss/recommended'],
 	ignorePatterns: ['**/*.css'],
 	overrides: [
 		{
@@ -27,6 +21,8 @@ module.exports = {
 			rules: {
 				'@typescript-eslint/semi': 'off',
 				'@typescript-eslint/no-unused-vars': 'error',
+				'@typescript-eslint/object-curly-spacing': ['error', 'always'],
+				'prettier/prettier': 'error',
 			},
 		},
 	],
